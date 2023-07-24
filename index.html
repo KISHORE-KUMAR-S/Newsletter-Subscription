@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div id="home">
+            <section class="image-mobile-view">
+                <img src="illustration-sign-up-mobile.svg">
+            </section>
+            <section class="normal">
+                <p id="title">Stay updated!</p>
+                <p id="sub-title">Join 60,000+ product managers receiving
+                    monthly updates on:</p>
+                <ul>
+                    <li>
+                        <img src="icon-list.svg" alt>
+                        <span>Product discovery and
+                            building what matters.</span>
+                    </li>
+                    <li>
+                        <img src="icon-list.svg" alt>
+                        <span>Measuring to ensure
+                            updates
+                            are a success.</span>
+                    </li>
+                    <li>
+                        <img src="icon-list.svg" alt>
+                        <span>And much more!</span>
+                    </li>
+                </ul>
+                <h5>Email Address</h5>
+                <form>
+                    <input type="email" name="email" id="email"
+                        placeholder="email@company.com" required>
+                    <button id="btn" onclick="validate()">Subscribe to monthly
+                        newsletter</button>
+                </form>
+            </section>
+            <section class="image-desktop-view">
+                <img src="illustration-sign-up-desktop.svg" alt>
+            </section>
+        </div>
+    </body>
+    <script>
+        function validate() {
+            window.location.pathname = "Newsletter-Subscription/success.htm";
+        }
+    </script>
+</html>

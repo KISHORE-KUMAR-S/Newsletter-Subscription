@@ -1,0 +1,130 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(234, 29%, 20%);
+    overflow-y: hidden;
+}
+#home{
+   
+    background-color: #fff;
+}
+#success{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 3%;
+    width: 30%;
+}
+#success section{
+    margin: 5% 10%;
+}
+#home .normal{
+    margin-top: 5%;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+#home .image-desktop-view img{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    width: 350px;
+}
+#title{
+    font-size: 50px;
+    font-weight: 600;
+    color: hsl(235, 18%, 26%);
+}
+#success #title{
+    position: relative;
+    top: -25px;
+}
+#sub-title{
+    font-size: 15px;
+    margin-top: -30px;
+    line-height: 20px;
+    color: hsl(235, 18%, 26%);
+}
+#success #sub-title{
+    position: relative;
+    top: -25px;
+}
+li{
+    list-style-type: none;
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: -35px;
+}
+li img {
+    margin-right: 10px;
+    width: 5%;
+}
+li span{
+    position: relative;
+    top: -5px;
+}
+input{
+    padding: 15px;
+    border-radius: 5px;
+    width: 350px;
+}
+input:focus{
+    color: red;
+    border-color: red;
+}
+#btn{
+    padding: 15px;
+    width: 98%;
+    background-color: hsl(235, 18%, 26%);
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#btn:hover{
+    background-color: #FF6449;
+}
+#success #btn{
+    position: relative;
+    top: -25px;
+}
+@media only screen and (max-width: 375px) {
+    .image-desktop-view img{
+        display: none;
+    }
+    body{
+        background-color: white;
+        display:grid;
+    }
+    #home{
+        position: absolute;
+        width:max-content;
+        margin: -7px;
+        font-size: 25px;
+        top: 0;
+    }
+    #home .normal{
+        margin: 0 0 0 5%;
+        width: 375px;
+    }
+    #email{
+        width: 300px;
+    }
+    #btn{
+        width: 335px;
+    }
+    .image-mobile-view img{
+        position: relative;
+    }
+}
+@media only screen and (min-width: 376px){
+    .image-mobile-view img{
+        display: none;
+    }
+    #home{
+        display: flex;
+        justify-content: center;
+        margin: 5% 20% 0 20%;
+        border-radius: 20px;
+    }
+}
